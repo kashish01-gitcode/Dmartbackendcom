@@ -8,10 +8,8 @@ export default function Receipt() {
   const bill = calculateBill();
 
   const saveBill = async () => {
-  try {
-    await axios.post(
-      "http://localhost:5001/api/bills",
-      {
+    try {
+      await axios.post("https://dmartbackendcom30.onrender.com", {
         customer: {
           name: customer.name,
           gender: customer.gender,
@@ -28,8 +26,7 @@ export default function Receipt() {
 
         total: bill.total,
         gift: bill.gift,
-      }
-    );
+      });
 
     alert("Bill Saved Successfully");
   } catch (error) {
