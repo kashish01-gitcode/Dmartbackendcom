@@ -9,7 +9,7 @@ export default function Receipt() {
 
   const saveBill = async () => {
     try {
-      await axios.post("https://dmartbackendcom30.onrender.com", {
+      await axios.post("https://dmartbackendcom30.onrender.com/api/bills", {
         customer: {
           name: customer.name,
           gender: customer.gender,
