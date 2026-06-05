@@ -1,0 +1,4 @@
+Add-Content .gitignore "backend/node_modules"
+Add-Content .gitignore "dmart-billing/node_modules"
+Add-Content .gitignore "dmart-billing/dist"
+Add-Content .gitignore ".env"
